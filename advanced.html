@@ -3,99 +3,68 @@
 	<head>
 		<title>Prototype 1 </title>
 		<link rel = "stylesheet" href="main.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 		<!--Some CSS code is added here but also uses css code from main.css-->
 		<style type="text/css">
 
-			@media screen and (min-width: 1400px) { 
-				p{
-					position: absolute;
-					top:28%;
-					left: 1.5%;
-				}
-
-				/*This is the styling for the form where user enters information, it overrides the styling in main.css*/
-				.inputInfo input{
-					margin-bottom: 20%;
-					margin-left: 80%;
-				}
-
-				.genres { 
-					position: absolute;
-					top: 48%;
-					left: 11%;
-					background-color: white;
-					border:2px; 
-					solid: #ccc; 
-					width:300px; 
-					height: 100px; 
-					overflow-y: scroll;
-				}
-
-				#acct{
-					position: relative;
-					top: 45%;
-					left: 30%;
-				}
-
-				#acct-txt{
-					position: absolute;
-					top: 63%;
-					left: 1.5%;
-				}
-
-				#select-gnr{
-					position: absolute;
-					top: 46%;
-					left: 1.5%;
-				}
+			#directions{
+				position: absolute;
+				top:250px;
+				left: 21px;
 			}
 
-
-			@media screen and (max-width: 1400px) { 
-				p{
-					position: absolute;
-					top:28%;
-					left: 1.5%;
-				}
-
-				/*This is the styling for the form where user enters information, it overrides the styling in main.css*/
-				.inputInfo input{
-					margin-bottom: 20%;
-					margin-left: 80%;
-				}
-
-				.genres { 
-					position: absolute;
-					top: 48%;
-					left: 11.5%;
-					background-color: white;
-					border:2px; 
-					solid: #ccc; 
-					width:300px; 
-					height: 100px; 
-					overflow-y: scroll;
-				}
-
-				#acct{
-					position: relative;
-					top: 45%;
-					left: 30%;
-				}
-
-				#acct-txt{
-					position: absolute;
-					top: 63%;
-					left: 1.5%;
-				}
-
-				#select-gnr{
-					position: absolute;
-					top: 46%;
-					left: 1.5%;
-				}
+			#page-name{
+				position: absolute;
+				top: 160px;
+				left: 21px;
 			}
+
+			/*This is the styling for the form where user enters information, it overrides the styling in main.css*/
+			.inputInfo input{
+				margin-bottom: 40px;
+				margin-left: 130px;
+
+			}
+
+			.genres { 
+				position: absolute;
+				top: 380px;
+				left: 150px;
+				background-color: white;
+				border:2px; 
+				solid: #ccc; 
+				width:300px; 
+				height: 100px; 
+				overflow-y: scroll;
+			}
+
+			#acct{
+				position: absolute;
+				top: 0px;
+				left: 125px;
+			}
+
+			#acct-txt{
+				position: absolute;
+				top: 520px;
+				left: 21px;
+			}
+
+			#select-gnr{
+				position: absolute;
+				top: 380px;
+				left:21px;
+			}
+
+			#adv-srch{
+				position: absolute;
+				top: 600px;
+				left: 145px;
+
+			}
+
 		</style>
 	
 
@@ -109,7 +78,7 @@
 					<a href = "index.html"><img src="logo.png" alt= "background" width="170" height="170" ></a>
 				</div>
 
-				<div class="account" style="top: 9%; right: 5%;">
+				<div class="account" style="position:absolute; top: 75px; left: 1340px;">
 					<input type="image" id="account" src="account.png" width ="45" height="45"> 
 					
 					<div class = "account-content" style = "right:0;">
@@ -124,8 +93,8 @@
 		</header>
 
 
-		<h1>Advanced Search </h1>	
-		<p>Fill in at least one of the fields below:</p>		
+		<h1 id="page-name">Advanced Search </h1>	
+		<p id="directions">Fill in at least one of the fields below:</p>		
 
 		<!--Form for users to enter input -->
 		<form id ="coverInfo">
@@ -135,27 +104,34 @@
 				<input type="text" id="song"/></br>
 				<label for="artist">Original artist:</label>  
 				<input type="text" id="artist"/></br>
+		
 			</div>
 		</form> 
 
 		<p id="select-gnr">Select genre(s):</p>
 
 		<div class="genres">
-			<input type="checkbox" /> Genre  <br />
-			<input type="checkbox" /> Genre  <br />
-			<input type="checkbox" /> Genre  <br />
-			<input type="checkbox" /> Genre  <br />
-			<input type="checkbox" /> Genre <br />
-			<input type="checkbox" /> Genre <br />
-			<input type="checkbox" /> Genre <br />
-			<input type="checkbox" /> Genre <br />
-			<input type="checkbox" /> Genre <br />
-			<input type="checkbox" /> Genre <br />
+			<input type="checkbox" /> Alternative Rap<br />
+			<input type="checkbox" /> Alternative Rock<br />
+			<input type="checkbox" /> Acid Techno <br />
+			<input type="checkbox" /> Breakcore<br />
+			<input type="checkbox" /> Contemporary Blues<br />
+			<input type="checkbox" /> Contemporary R&B <br />
+			<input type="checkbox" /> Gangsta Rap<br />
+			<input type="checkbox" /> Minimal House<br />
+			<input type="checkbox" /> Space Age Pop<br />
+			<input type="checkbox" /> Underground Rap <br />
 		</div>
 
 
 		<p id="acct-txt">Account:</label>  
 		<input type="text" id="acct"/></br> 
+
+		<div id="adv-srch">
+			<input type="submit" value="Search">
+
+		</div>
+
 
 			
 	

@@ -3,15 +3,16 @@
 	<head>
 		<title>Prototype 1 </title>
 		<link rel = "stylesheet" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--CSS code-->
 		<style type="text/css">
         #playlist{
             list-style: none;
 				position: absolute;
-				top: 33%;
-			  	display: block;
-			  	width: 100%;
+				top: 255px;
+			  	/*display: block;
+			  	width: 1440px;
 			  	height: 150px;
 			  	border: none;
 			  	padding: 0px 0px;
@@ -19,6 +20,20 @@
 			  	cursor: pointer;
 			  	text-align: left;
 			  	text-align: top;
+			  	*/
+        }
+
+        .result1{
+
+			  	display: block;
+			  	width: 1440px;
+			  	height: 160px;
+			  	padding: 0px 0px;
+			  	font-size: 16px;
+			  	cursor: pointer;
+			  	text-align: left;
+			  	text-align: top;
+
         }
         #playlist li a{
             color:black;
@@ -31,10 +46,10 @@
 			/*Search bar code overrides code in main.css*/
 			.search-box{
 				position:absolute;
-				top: 10%;
-				left: 50%;
+				top: 80px;
+				left: 730px;
 				transform: translate(-50%, -10%);
-				background: #2f3640;
+				background:#2f3640;
 				height: 30px;
 				border-radius: 40px;
 				padding: 10px;
@@ -47,7 +62,7 @@
 				width: 40px;
 				height: 40px;
 				border-radius: 50%;
-				background: #2f3640;;
+				background: #2f3640;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -69,8 +84,8 @@
 
 			/*This is for the advanced search button, it overrides the one in main.css */
 			button1{
-				top: 10%;
-				left: 65%;
+				top: 80px;
+				left: 950px;
 				cursor: pointer;
 				color: white;
 				background-color: #e84118;
@@ -103,15 +118,15 @@
 			/*this sets the specific position for popular button */
 			#popular{
 				position: absolute;
-				top:25%;
-				left: 2%;
+				top:180px;
+				left: 21px;
 			}
 
 			/*this sets the specific position for recent button */
 			#recent{
 				position: absolute;
-				top:0%;
-				left: 105%;
+				top:0px;
+				left: 200px;
 			}
 
 			/*this is the styling for the search result covers/buttons*/
@@ -124,27 +139,33 @@
 			/*styling for like button*/
 			#like{
 				position: absolute;
-				left: 25%;
+				left: 1200px;
 			}
 		
 			#dislike{
 				position: absolute;
-				left: 30%;
+				left: 1300px;
 
 			}
 			/*styling for report button*/
 			#report{
 				position: relative;
+				left: 1380px;
+				
+
+
+
 			}
 			/*styling for bookmarked button*/
 			#bookmarked{
 				position: absolute;
-				left: 1%;
+				left: 2px;
 			}
 			/*styling for audio player*/
 			#audioPlayer{
 				position: relative;
-				width: 97%;
+				bottom: -25px;
+				width: 1400px;
 			}
 
 		</style>
@@ -159,7 +180,7 @@
 					<a href = "index.html"><img src="logo.png" alt= "background" width="170" height="170" ></a>
 				</div>
 
-				<div class="account" style="top: 9%; right: 5%;">
+				<div class="account" style="position:absolute; top: 75px; left: 1340px;">
 					<input type="image" id="account" src="account.png" width ="45" height="45"> 
 					
 					<div class = "account-content" style = "right:0;">
@@ -245,16 +266,6 @@
     <script >
         // loads the audio player
         audioPlayer();
-
-        //press enter to search code
-       
-			var input = document.getElementById("search-txt");
-			input.addEventListener("keyup", function(event) {
-		  		if (event.keyCode === 13) {
-		   			event.preventDefault();
-		   			document.getElementById("search").click();
-		  			}
-				});
 		
     </script>	
 

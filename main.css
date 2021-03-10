@@ -38,8 +38,8 @@
 /* Styling used for advanced search button in index.html */
 button1{
 	position: absolute;
-	top: 28%;
-	left: 65%;
+	top: 230px;
+	left: 950px;
 	cursor: pointer;
 	color: white;
 	background-color: #e84118;
@@ -56,38 +56,38 @@ button1{
 /* Styling used for first cover on the homepage*/
 #music1{
 	position: absolute;
-	top: 50%;
-	left: 3%;
+	top: 105px;
+	left: 35px;
 }
 
 #music2{
 	position: absolute;
-	top: 50%;
-	left: 22.5%;
+	top: 105px;
+	left: 310px;
 }
 
 
 #music3{
 	position: absolute;
-	top: 50%;
-	left: 42%;
+	top: 105px;
+	left: 585px;
 }
 
 #music4{
 	position: absolute;
-	top: 50%;
-	left: 61.5%;
+	top: 205px;
+	left: 435px;
 }
 
 #music5{
 	position: absolute;
-	top: 50%;
-	left: 81%;
+	top: 205px;
+	left: 580px;
 }
 
 #top-covers{
 	position: absolute;
-	top:40%;
+	top:340px;
 	left: 40px;
 }
 
@@ -95,8 +95,8 @@ button1{
 /* Styling for the search bar used in homepage (index.html) */
 .search-box{
 	position:absolute;
-	top: 30%;
-	left: 50%;
+	top: 245px;
+	left: 725px;
 	transform: translate(-50%, -30%);
 	background: #2f3640;
 	height: 40px;
@@ -106,9 +106,9 @@ button1{
 
 
 .search-btn{
-
+	position: absolute;
 	color: #e84118;
-	float: right;
+	left: 315px;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -161,16 +161,16 @@ button1{
 /*Styling for the upload-file id that contains the custom upload mp3 button as well as the default upload button */
 #upload-file{
 	position: absolute;
-	top: 60%;
-	left:1.5%;
+	top: 500px;
+	left:21px;
 }
 
 
 /*Styling for the upload-photo id that contains the custom upload photo button as well as the default upload button */
 #upload-photo{
 	position: absolute;
-	top: 70%;
-	left:1.5%;
+	top: 570px;
+	left:21px;
 }
 
 #custom-photo:hover {
@@ -181,8 +181,8 @@ button1{
 /*Styling for the upload button at the bottom of upload page */
 #uploadCover{
 	position: absolute;
-	top:80%;
-	left: 1.5%;
+	top:640px;
+	left: 21px;
 	padding: 20px;
 	color: white;
 	background-color: #009578;
@@ -196,7 +196,7 @@ button1{
 }
 
 
-/*Styling for the input form used in index.html(some of it is overriden there), and used in upload.html */
+/*Styling for the input form used in advanced.html(some of it is overriden there), and used in upload.html */
 .inputInfo input{
 	margin-bottom: 20px;
 	margin-left: 130px;
@@ -208,34 +208,38 @@ button1{
 
 .inputInfo{
 	position: absolute;
-	top: 35%;
-	left:1.5%;
+	top: 280px;
+	left:21px;
 }
 
 
 /*sets background color of website*/
 body{
+
+
+	width: 1440px;
+	height: 818px;
 	background-image: linear-gradient(to right, #AF7AC5 , #5499C7 );
 }
 
 /*sets styling for h1 used in advanced.html and upload.html */
 h1{
 	position: absolute;
-	top: 20%;
-	left: 20px;
+	top: 166px;
+	left: 21px;
 }
 
 #select-gnr{
 	position: absolute;
-	top: 43%;
-	left: 1.5%;
+	top: 365px;
+	left: 21px;
 }
 
 
 .genres { 
 	position: absolute;
-	top: 45%;
-	left: 10%;
+	top: 365px;
+	left: 150px;
 	background-color: white;
 	border:2px; 
 	solid: #ccc; 

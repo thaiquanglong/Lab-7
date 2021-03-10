@@ -3,29 +3,31 @@
 	<head>
 		<title>Prototype 1 </title>
 		<link rel = "stylesheet" href="main.css">
-				<style type="text/css">
-        #playlist{
-            list-style: none;
-				position: absolute;
-				top: 33%;
-				display: block;
-			  	width: 100%;
-			  	height: 210px;
-			  	border: none;
-			  	padding: 0px 0px;
-			  	font-size: 16px;
-			  	cursor: pointer;
-			  	text-align: left;
-			  	text-align: top;
-        }
-        #playlist li a{
-            color:black;
-            text-decoration: none;
-			position:absolute;
-        }
-        #playlist .current-song a{
-            color:blue;
-        }
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+	        #playlist{
+	            list-style: none;
+					position: absolute;
+					top: 315px;
+					display: block;
+				  	width: 1430px;
+				  	height: 210px;
+				  	border: none;
+				  	padding: 0px 0px;
+				  	font-size: 16px;
+				  	cursor: pointer;
+				  	text-align: left;
+				  	text-align: top;
+	        }
+	        #playlist li a{
+	            color:black;
+	            text-decoration: none;
+				position:absolute;
+	        }
+	        #playlist .current-song a{
+	            color:blue;
+	        }
 
 			/*this is the styling for the search result covers/buttons*/
 			.results .result1 {
@@ -57,8 +59,8 @@
 			/*styling for audio player*/
 			#audioPlayer{
 				position: absolute;
-				bottom: -100%;
-				width: 97%;
+				bottom: -260px;
+				width: 1400px;
 			}
 
 		</style>
@@ -71,16 +73,14 @@
 
 				<!--This makes the logo picture into a button. The logo will be placed at the top and will lead to homepage when clicked on.-->
 				<div id="home" style = "float: left;">
-					<a href = "index.html"><img src="logo.png" alt= "background" width="170" height="170" ></a>
+					<a href = "index.html"><img src="logo.png" alt= "background" width="170px" height="170px" ></a>
 				</div>
 
-
-				<!-- This makes the account picture into a button that will have a dropdown menu, look at account and account-content in main.css for more on the formating-->
-				<div class="account" style="top: 9%; right: 5%;">
-					<input type="image" id="account" src="account.png" width ="45" height="45"> 
-					
-					<!-- This is the content of the dropdown menu -->
-					<div class = "account-content" style = "right:0;">
+				<div class="account" style="position:absolute; top: 75px; left: 1340px;">
+					<input type="image" id="account" src="account.png" width ="45px" height="45px"> 
+						
+						<!-- This is the content of the dropdown menu -->
+					<div class = "account-content" style = "right:0px;">
 						<a href = "upvotes.html"> My upvotes </a>
 						<a href = "myuploads.html"> My uploads </a>
 						<a href = "bookmarked.html"> My bookmarked songs </a>
@@ -88,9 +88,16 @@
 						<a href ="#"> Sign out </a>
 					</div>
 				</div>
+
+
+
+
+		
 			</nav>
 
 		</header>
+
+
 
 			<!--This creates a search box where the user can eneter info and use the search.png icon that leads to the search page. Look at search-box, search-txt, and search-btn in main.css for more -->
 			<div class = "search-box">
